@@ -1,7 +1,6 @@
 {
   "name": "cs",
   "version": "1.0.0",
-  "description": "",
   "main": "runtime.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "execution-time": "^1.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilkigab001/week7Assessment.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/wilkigab001/week7Assessment/issues"
+  },
+  "homepage": "https://github.com/wilkigab001/week7Assessment#readme",
+  "description": ""
 }

@@ -1,0 +1,26 @@
+
+results for tinyArray = 
+insert 21.083 μs
+append 105.75 μs
+
+
+results for smallArray = 
+insert 86.959 μs
+append 105.542 μs
+
+results for mediumArray = 
+insert 226.333 μs
+append 149.25 μs
+
+
+results for largeArray = 
+insert 6.7875 ms
+append 429.792 μs
+
+extraLargeArray at insert = 779.010583 ms
+extraLargeArray at append = 2.609292 ms
+
+
+The pattern I see is that as the size of the array increases, the time necessary to complete and compute the functions are greater. Not only that bu the time needed to do the insert function is much larger because it is using the unshift method. The append function scales much better because the time needed to complete doesn't increase at the same velocity as the insert function does.
+
+Th reasons the insert function is so slow is because it uses the unshift method. The unshift method has more steps to compute than the append method. The append method simply needs to add stuff to the back of the array. Meanwhile the unshift method has to put stuff in the front of the array then shift all indexes back 1.
