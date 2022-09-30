@@ -2,8 +2,8 @@
 
 const addToZero = (arr) => {
     for(let i = 0; i < arr.length; i++){
-        for(let j = 0; j < arr.length; j++){
-            if(arr[i] !== arr[j] && arr[i] + arr[j] ===0){
+        for(let j = i + 1; j < arr.length; j++){
+            if(arr[i] + arr[j] === 0){
                 return true
             }
         }
@@ -11,7 +11,7 @@ const addToZero = (arr) => {
     return false
 }
 
-//runtime is O(n^2) because of nested for loops space == O(n^2)
+//runtime is O(n^2) because of nested for loops space == O(n)
 
 //2
 
@@ -64,4 +64,4 @@ const findLongestWord = arr => {
     return longestWord
 }
 
-//runtime === Object(N) space == O(1)
+//runtime === Object(N) space == O(n)
